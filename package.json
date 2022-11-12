@@ -1,0 +1,46 @@
+{
+  "devDependencies": {
+    "concurrently": "^7.5.0"
+  },
+  "name": "draft",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "ansi-regex": "^5.0.1",
+    "ansi-styles": "^4.3.0",
+    "chalk": "^4.1.2",
+    "color-convert": "^2.0.1",
+    "color-name": "^1.1.4",
+    "date-fns": "^2.29.3",
+    "cliui": "^8.0.1",
+    "is-fullwidth-code-point": "^3.0.0",
+    "emoji-regex": "^8.0.0",
+    "get-caller-file": "^2.0.5",
+    "escalade": "^3.1.1",
+    "require-directory": "^2.1.1",
+    "lodash": "^4.17.21",
+    "shell-quote": "^1.7.4",
+    "has-flag": "^4.0.0",
+    "rxjs": "^7.5.7",
+    "spawn-command": "^0.0.2-1",
+    "tree-kill": "^1.2.2",
+    "string-width": "^4.2.3",
+    "supports-color": "^8.1.1",
+    "strip-ansi": "^6.0.1",
+    "wrap-ansi": "^7.0.0",
+    "tslib": "^2.4.1",
+    "yargs": "^17.6.2",
+    "y18n": "^5.0.8",
+    "yargs-parser": "^21.1.1"
+  },
+  "scripts": {
+    "start": "node server/server.js",
+  "develop": "concurrently \"cd server && npm run start\" \"cd client && npm start\"",
+  "install": "cd server && npm i && cd ../client && npm i",
+  "seed": "cd server && npm run seed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
